@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "Eurostar Regular Extended";
+    src: url("@/fonts/EurostarRegularExtended.eot");
+    src: url("@/fonts/EurostarRegularExtended.eot?#iefix")
+            format("embedded-opentype"),
+        url("@/fonts/EurostarRegularExtended.woff2") format("woff2"),
+        url("@/fonts/EurostarRegularExtended.woff") format("woff"),
+        url("@/fonts/EurostarRegularExtended.ttf") format("truetype"),
+        url("@/fonts/EurostarRegularExtended.svg#EurostarRegularExtended")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

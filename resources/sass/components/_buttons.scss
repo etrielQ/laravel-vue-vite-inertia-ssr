@@ -1,0 +1,105 @@
+.btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 6px 0px;
+    transition: var(--transition);
+    border-radius: 0;
+    border: 0;
+    border-left: 0.3rem solid transparent;
+    overflow: hidden;
+    &:hover {
+        .btn {
+            &-icon {
+                transform: translateX(-0.2rem);
+            }
+            &-txt {
+                transform: translateX(0);
+            }
+        }
+    }
+    &--centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &--white {
+        transition: var(--transition);
+        .btn {
+            border-color: var(--c-white) !important;
+            &-icon {
+                .icon {
+                    color: var(--c-white);
+                }
+            }
+            &-text {
+                color: var(--c-white);
+            }
+        }
+    }
+    &--primary {
+        border-color: var(--c-primary) !important;
+        .btn {
+            &-icon {
+                .icon {
+                    color: var(--c-primary);
+                }
+            }
+            &-txt {
+                color: var(--c-primary);
+            }
+        }
+    }
+    &--secondary {
+        border-color: var(--c-secondary) !important;
+        .btn {
+            &-icon {
+                .icon {
+                    color: var(--c-secondary);
+                }
+            }
+            &-txt {
+                color: var(--c-secondary);
+            }
+        }
+    }
+    &--secondary-light {
+        border-color: var(--c-secondary-light) !important;
+        .btn {
+            &-icon {
+                .icon {
+                    color: var(--c-secondary-light);
+                }
+            }
+            &-txt {
+                color: var(--c-secondary-light);
+            }
+        }
+    }
+    &--only-icon {
+        justify-content: center;
+        cursor: pointer;
+        border-left: 0;
+        .btn {
+            &-icon {
+                transform: translateX(0) !important;
+            }
+        }
+    }
+    &-icon {
+        display: flex;
+        flex-shrink: 0;
+        font-size: 3.6rem;
+        transition: var(--transition);
+        transform: translateX(-4rem);
+    }
+    &-txt {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1em;
+        transition: var(--transition);
+        text-transform: uppercase;
+        transform: translateX(-4rem);
+        padding-left: 2rem;
+    }
+}

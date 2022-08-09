@@ -1,0 +1,115 @@
+.footer {
+    margin: 4rem;
+    background-color: var(--c-tertiary);
+    padding: 6rem 0;
+    // Footer Left
+    &__quote {
+        margin-top: 5rem;
+        font-style: italic;
+    }
+    &__info {
+        margin-top: 5rem;
+        max-width: 53rem;
+        &-item {
+            &-alt {
+                color: #bbb;
+            }
+        }
+    }
+
+    // Footer Right
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+    }
+    &__newsletter {
+        &-input {
+            width: 100%;
+            border-bottom: 0.2rem solid var(--c-primary);
+            position: relative;
+            input {
+                width: 90%;
+                outline: 0;
+                border: 0;
+                padding: 2.3rem 0;
+                background: 0;
+            }
+            &__button {
+                position: absolute;
+                height: 100%;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                border: 0;
+                outline: 0;
+                &--not-abs {
+                    position: static;
+                    transform: none;
+                }
+                .icon {
+                    margin-left: 1.5rem;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        &-checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 2.5rem;
+            a {
+                color: var(--c-primary);
+            }
+        }
+    }
+
+    // Footer Bottom
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        flex: 1;
+        &__rights,
+        &__socials,
+        &__policy {
+            flex-shrink: 0;
+            width: 33.3%;
+        }
+        &__socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-item {
+                display: flex;
+                align-items: baseline;
+                margin-right: 4rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .icon {
+                    font-size: 2rem;
+                    color: var(--c-primary-light);
+                }
+            }
+        }
+        &__policy {
+            display: flex;
+            align-items: center;
+            &-item {
+                margin-right: 1rem;
+            }
+        }
+        &__babel {
+            padding-left: 1.5rem;
+            border-left: 0.1rem solid var(--c-primary-light);
+        }
+    }
+}

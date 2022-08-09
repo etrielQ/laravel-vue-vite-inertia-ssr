@@ -1,0 +1,25 @@
+@import "./config/_fonts";
+@import "./config/config-index";
+
+@import "./components/_buttons";
+@import "./components/_filter-tab";
+@import "./components/_toastr";
+@import "./components/_input";
+@import "./components/_switch";
+@import "./components/_checkbox";
+@import "./components/_radio";
+@import "./components/_accordion";
+@import "./components/_breadcrumb";
+@import "./components/_ck-editor";
+
+@import "./common/_header";
+@import "./common/_footer";
+@import "./common/_main-menu";
+@import "./common/_subheader";
+
+@import "./pages/_index";
+@import "./pages/_about";
+@import "./pages/_how-it-works";
+@import "./pages/_product";
+@import "./pages/_project";
+@import "./pages/_blog";

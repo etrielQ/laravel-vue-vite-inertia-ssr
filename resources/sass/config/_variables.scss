@@ -1,0 +1,48 @@
+/* Font Sizes */
+
+/* Font Families */
+$font-family-base: "Poppins", sans-serif;
+
+/* Transitions */
+$transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
+$transition-fast: 0.2s cubic-bezier(0.29, 0.13, 0.27, 0.74);
+
+/* Colors */
+$c-black: #000000;
+
+:root {
+    --transition: 0.3s cubic-bezier(0.29, 0.13, 0.27, 0.74);
+    --transition-slow: 0.4s cubic-bezier(0.29, 0.13, 0.27, 0.74);
+
+    /* Colors */
+    --c-white: #fff;
+
+    --c-primary: #313131;
+    --c-primary-light: #8e8e8d;
+    --c-secondary: #585858;
+    --c-secondary-light: #bfbfbf;
+    --c-tertiary: #f0f0f0;
+
+    /* variables */
+    --xl-container-spacing: 10rem;
+    --swiper-button-spacing: 4rem;
+}
+
+.c-white {
+    color: var(--c-white);
+}
+.c-primary {
+    color: var(--c-primary);
+}
+.c-primary-light {
+    color: var(--c-primary-light);
+}
+.c-secondary {
+    color: var(--c-secondary);
+}
+.c-secondary-light {
+    color: var(--c-secondary-light);
+}
+.c-tertiary {
+    color: var(--c-tertiary);
+}

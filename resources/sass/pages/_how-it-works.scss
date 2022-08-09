@@ -1,0 +1,92 @@
+.how-it-works {
+    &__content {
+        display: flex;
+        max-width: 100%;
+        margin-top: 6rem;
+    }
+    &__item {
+        width: calc(100% / 6);
+        height: 70rem;
+        position: relative;
+        padding: 3rem;
+        transition: var(--transition);
+        overflow: hidden;
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+
+        &-image {
+            @include position(absolute, 0, 0, 100%, 100%);
+            z-index: 0;
+            pointer-events: none;
+            transition: var(--transition);
+            &:after {
+                content: "";
+                @include position(absolute, 0, 0, 100%, 100%);
+                background-color: rgba(0, 0, 0, 0.8);
+                z-index: 1;
+                pointer-events: none;
+                transition: var(--transition);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(35rem);
+            &__title {
+                transition: var(--transition);
+
+                &-alt {
+                    writing-mode: vertical-rl;
+                    position: absolute;
+                    bottom: 4rem;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(-180deg);
+                    transition: var(--transition);
+                }
+            }
+            &__text {
+                margin-top: 2rem;
+                transition: var(--transition);
+            }
+        }
+
+        // ACTIVE CARD
+        &:hover {
+            max-width: unset;
+            flex: unset;
+            width: 100%;
+            .how-it-works {
+                &__item {
+                    &-image {
+                        &::after {
+                            background-color: rgba(0, 0, 0, 0.45);
+                        }
+                    }
+                    &-content {
+                        align-items: flex-start;
+                        opacity: 1;
+                        transform: translateY(0);
+                        &__title {
+                            &-alt {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.blog {
+    &-detail {
+        &__share {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6rem;
+            &-social {
+                display: flex;
+                align-items: center;
+                &__icons {
+                    display: flex;
+                    align-items: center;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem;
+                        position: relative;
+                        transition: var(--transition);
+                        &:after {
+                            content: "";
+                            @include position(absolute, 0, 0, 100%, 100%);
+                            background-color: #000;
+                            transform: scale(0);
+                            transition: var(--transition);
+                            z-index: -1;
+                        }
+                        &:not(:last-child) {
+                            margin-right: 1rem;
+                        }
+                        &:hover {
+                            color: var(--c-white);
+                            &:after {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

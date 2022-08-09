@@ -1,0 +1,36 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    @include bp(tablet-small) {
+        overflow-x: auto;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+    .icon {
+        flex-shrink: 0;
+        margin: 0 1rem;
+        font-size: 1rem;
+        position: relative;
+        top: 0.1rem;
+        color: var(--c-white);
+    }
+    &__item {
+        text-transform: capitalize;
+        color: var(--c-white);
+        font-size: 2rem;
+        font-weight: 300;
+        transition: var(--transition);
+        &:last-child {
+            font-weight: 500;
+        }
+        &:hover {
+            color: var(--c-white);
+        }
+        @include bp(tablet-small) {
+            white-space: nowrap;
+        }
+    }
+}
